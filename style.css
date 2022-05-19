@@ -1,0 +1,335 @@
+:root{
+  font-size: 62.5%;
+  --ff-standard: 'Josefin Sans', sans-serif;
+  --fs-standard: 1.6rem;
+  --lh-standard: 2rem;
+  --fs-logo: 3rem;
+  --lh-logo: 4.5rem;
+  --fs-medium: 2.5rem;
+  --lh-medium: 3.5rem;
+}
+
+.primary-color{
+  color: #128AA3;
+}
+
+.primary-color:visited{
+  color: #128AA3;
+}
+
+.primary-color:active,
+.primary-color:hover{
+  color: #31d3f3;
+}
+
+
+body{
+  font-family: var(--ff-standard);
+  font-size: var(--fs-standard);
+  line-height: var(--lh-standard);
+  background-color: #111;
+}
+
+.hide{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.navbar{
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1.5px solid #878686;
+  margin-bottom: 2rem;
+}
+
+.navbar .container-fluid{
+  align-items: baseline;
+}
+
+.navbar .collapse{
+  padding: 0;
+}
+
+.navbar-toggler{
+  font-size: var(--fs-logo);
+}
+
+.nav-brand {
+  font-size: var(--fs-logo);
+  line-height: var(--lh-logo);
+  padding: 1rem 0 0 6rem;
+}
+
+main{
+  margin: 0 auto;
+}
+
+
+.card {
+  position: relative;
+  max-width: 350px;
+  min-height: 400px;
+  padding: 0 .8rem;
+  margin: 0 auto 2rem;
+}
+
+#img1{
+  background-image: url('./images/animais.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+
+#img2{
+  background-image: url('./images/arquitetura.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#img3{
+  background-image: url('./images/cidade.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#img4{
+  background-image: url('./images/decoracao.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#img5{
+  background-image: url('./images/esportes.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#img6{
+  background-image: url('./images/natureza.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#img7{
+  background-image: url('./images/paisagem.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#img8{
+  background-image: url('./images/pessoas.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#img9{
+  background-image: url('./images/refeicoes.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+
+
+#img1:hover, #img2:hover, #img3:hover,
+#img4:hover, #img5:hover,
+#img7:hover, #img8:hover, #img9:hover{
+  background-size: 110%;
+  filter: grayscale(0%);
+}
+
+#img6:hover, 
+#img9:hover{
+  background-size: 120%;
+  filter: grayscale(0%);
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--fs-medium);
+  line-height: var(--lh-medium);
+}
+
+
+
+.card-title{
+  color: #FFFFFF;
+  font-size: var(--fs-medium);
+  line-height: var(--lh-medium);
+
+  text-shadow: 2px 2px #128AA3;
+}
+
+.card-button{
+  text-transform: uppercase ;
+  padding: .5rem 1rem ;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+
+  font-size: var(--fs-standard);
+  line-height: var(--lh-medium);
+}
+
+.card-button:hover{
+  background-color: #31d3f3;
+  border: 2px solid #FFFFFF;
+}
+
+.social-media{
+  display: none;
+}
+
+.twitter,.facebook,
+.instagram,.linkedin,
+.github{
+  fill: #888787;
+}
+
+.twitter:hover{
+  fill: #1D9BF0;
+  cursor: pointer;
+}
+
+.facebook:hover{
+  fill: #0D8AF0;
+  cursor: pointer;
+}
+
+.instagram:hover{
+  fill: #FF5A3F;
+  cursor: pointer;
+}
+
+.linkedin:hover{
+  fill: #0A66C2;
+  cursor: pointer;
+}
+
+.github:hover{
+  fill: white;
+  cursor: pointer;
+}
+
+
+footer{
+ text-align: center; 
+ color: #888787;
+}
+
+footer span{
+  color: #128AA3;
+}
+
+
+
+@media (min-width: 768px){
+
+  .navbar .container-fluid {
+    align-items: center;
+  }
+  
+  .container-fluid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-areas: "A B C";
+    gap: 3rem;
+  }
+
+  .nav-brand{
+    display: flex;
+    grid-area: A;
+  }
+
+
+  #navbar-items{
+    grid: B;
+  }
+
+  .navbar-nav{
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .social-media{
+    grid-area: C;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    margin-right: 5rem;
+  }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1012px){
+
+
+  #img1, #img2, #img3,
+  #img4, #img5, #img7, 
+  #img8, #img9{
+  background-size: 140%;
+  } 
+
+  #img6, 
+  #img9{
+    background-size: 165%;
+  }
+
+  #img1:hover, #img2:hover, #img3:hover,
+  #img4:hover, #img5:hover, #img7:hover, 
+  #img8:hover, #img9:hover{
+  background-size: 150%;
+  }
+
+
+  #img6:hover, 
+  #img9:hover{
+    background-size: 175%;
+  }
+ 
+}
+
+
+@media (min-width: 1012px){
+  #img6, 
+  #img9{
+    background-size: 180%;
+  }
+
+  #img6:hover, 
+  #img9:hover{
+    background-size: 190%;
+  }
+
+  .navbar-nav{
+    gap: 3rem;
+    font-size: 2rem;
+  }
+}
+
